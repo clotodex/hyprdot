@@ -38,6 +38,8 @@
 
     // Modules Left
     "modules-left": [
+        "custom/hyprshade",
+        "custom/updates",
         "custom/hypridle",
         "custom/waybarthemes",
         "group/quicklinks",
@@ -51,14 +53,12 @@
 
     // Modules Right
     "modules-right": [
-        "custom/updates",
         "pulseaudio",
         "bluetooth",
         "battery",
         "network",
         "group/hardware",
         "custom/cliphist",
-        "custom/hyprshade",
         "tray",
         "clock"
     ]
