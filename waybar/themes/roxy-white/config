@@ -26,7 +26,7 @@
     "spacing": 0,
 
     // Load Modules
-    "include": ["~/.config/waybar/themes/starter/modules.json"],
+    "include": ["~/.config/waybar/themes/roxy-white/modules.json"],
 
 	// INFO: missing:
 	// random spacer, app runner, current layout, brightness
@@ -34,14 +34,12 @@
 	// docker, bluetooth status
 	// iwd
 	// myvolumecontrol
+	// some modules dont show up
 
     // Modules Left
     "modules-left": [
-        //"custom/appmenu",
-        //"custom/settings",
-        //"custom/waybarthemes",
-        //"custom/wallpaper",
-        //"wlr/taskbar",
+        "custom/hypridle",
+        "custom/waybarthemes",
         "group/quicklinks",
         "hyprland/window",
     ],
@@ -60,7 +58,6 @@
         "network",
         "group/hardware",
         "custom/cliphist",
-        "custom/hypridle",
         "custom/hyprshade",
         "tray",
         "clock"

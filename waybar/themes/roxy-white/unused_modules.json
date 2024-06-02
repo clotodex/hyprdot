@@ -1,0 +1,118 @@
+{
+
+    // Taskbar
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 18,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+           "Alacritty"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
+    },
+
+    // Cliphist
+    "custom/cliphist": {
+        "format": "",
+        "on-click": "sleep 0.1 && ~/.config/scripts/cliphist.sh",
+        "on-click-right": "sleep 0.1 && ~/.config/scripts/cliphist.sh d",
+        "on-click-middle": "sleep 0.1 && ~/.config/scripts/cliphist.sh w",
+        "tooltip": false
+    },
+
+    // Theme Starter Label
+    "custom/starter": {
+        "format": "THEME STARTER",
+        "tooltip": false
+    },
+
+
+    // Wallpaper
+    "custom/wallpaper": {
+        "format": "",
+        "on-click": "~/.config/hypr/scripts/wallpaper.sh select",
+        "on-click-right": "~/.config/hypr/scripts/wallpaper-effects.sh",
+        "tooltip": false
+    },
+
+    // Settings
+    "custom/settings": {
+        "format": "",
+        "on-click": "~/.config/apps/ML4W_Dotfiles_Settings-x86_64.AppImage",
+        "tooltip": false
+    },
+
+    // Keybindings
+    "custom/keybindings": {
+        "format": "",
+        "on-click": "~/.config/hypr/scripts/keybindings.sh",
+        "tooltip": false
+    },
+
+    // Filemanager Launcher
+    "custom/filemanager": {
+        "format": "",
+        "on-click": "thunar",
+        "tooltip": false
+    },
+
+    // Browser Launcher
+    "custom/browser": {
+        "format": "",
+        "on-click": "~/.config/.settings/browser.sh",
+        "tooltip": false
+    },
+
+    // ML4W Welcome App
+    "custom/ml4w-welcome": {
+        "on-click": "~/.config/apps/ML4W_Welcome-x86_64.AppImage",
+        "format": " ",
+        "tooltip": false
+    },
+
+    // Power Menu
+    "custom/exit": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+
+    // Keyboard State
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+
+    "hyprland/language": {
+        "format": "/ K {short}"
+    },
+
+    // Group Settings
+    "group/settings": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 300,
+            "children-class": "not-memory",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/settings",
+            "custom/waybarthemes",
+            "custom/wallpaper"
+        ]
+    },
+
+}
